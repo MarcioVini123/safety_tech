@@ -1,5 +1,17 @@
-<%- include ('./partials/header') %>
-
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" 
+    integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- link css -->
+    <link rel="stylesheet" href="../public/css/style.css">
+    <link rel="stylesheet" href="../public/css/planocss.css">
+    <title>Site</title>
+</head>
 <body>
     <!-- header-->
     <header style="background-image: url('../public/images/plano.jpg')">
@@ -7,15 +19,14 @@
         <div class="container">
             <nav>
                 <a href="/">
-                    <img src="../public/images/logo.vermelha.png" alt="logo">
+                    <img src="../public/images/logo...png" alt="logo">
                 </a>
                 <ul class="ul">
                     <a href="/">Home</a>
                     <a href="/login">Login</a>
                     <a href="/servicos">Checklist</a>
-                    <a class="btn" href="/planodeacao">Plano de Ação</a>
-                    <div class="close-icon" onclick="closeMenu()">
-                        <i class="fa fa-times-circle"></i>
+                    <a class="btn" href="../planodeacao">Plano de Ação</a>
+                    
                     </div>
                 </ul>
                 <div class="menu-icon" onclick="openMenu()">
@@ -31,8 +42,51 @@
             
         </div>
              <!-- end container =  fim de conteudo-->
+        <main>
+            <form class="add-form">
+                <input type="text" placeholder="Adicionar tarefa" class="input-task">
+                <button type="submit">+</button>
+              </form>
+          
+              <table>
+                <thead>
+                  <tr>
+                    <th>Tarefa</th>
+                    <th>Criada em</th>
+                    <th>Status</th>
+                    <th>Ações</th>
+                  </tr>
+                </thead>
+          
+                <tbody>
+                  <!-- <tr>
+                    <td>título da task</td>
+                    <td>00 de janeiro de 2023 15:00</td>
+                    <td>
+                      <select>
+                        <option value="pendente">pendente</option>
+                        <option value="em andamento">em andamento</option>
+                        <option value="concluída">concluída</option>
+                      </select>
+                    </td>
+                    <td>
+                      <button class="btn-action">
+                        <span class="material-symbols-outlined">edit</span>
+                      </button>
+          
+                      <button class="btn-action">
+                        <span class="material-symbols-outlined">delete</span>
+                      </button>
+                    </td>
+                  </tr> -->
+                </tbody>
+          
+          
+              </table>
+        </main>
 
 
+             
 <!-- footer -->
 <footer class="footer">
     <div  class="container">
@@ -45,6 +99,7 @@
 </footer>
 <!-- end footer -->
 <script src="../public/js/main.js"></script>
+<script src="../public/js/script.js"></script>
 
 </body>
 </html>

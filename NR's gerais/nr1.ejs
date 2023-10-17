@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário | GN</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: linear-gradient(to right, #fc9595, #ff3131);
+        }
+        .box{
+            color: white;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 15px;
+            border-radius: 15px;
+            width: 80%;
+        }
+        fieldset{
+            border: 3px solid #ff3131;
+        }
+        fieldset {
+        border: 0;
+        }
+        legend{
+            border: 1px solid #ff3131;
+            padding: 10px;
+            text-align: center;
+            background-color: #ff3131;
+            border-radius: 8px;
+        }
+        .inputBox{
+            position: relative;
+        }
+        .inputUser{
+            background: none;
+            border: none;
+            border-bottom: 1px solid white;
+            outline: none;
+            color: white;
+            font-size: 15px;
+            width: 100%;
+            letter-spacing: 2px;
+        }
+        .labelInput{
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            pointer-events: none;
+            transition: .5s;
+        }
+        .inputUser:focus ~ .labelInput,
+        .inputUser:valid ~ .labelInput{
+            top: -20px;
+            font-size: 12px;
+            color: #ff3131;
+        }
+       
+        #submit{
+            background-image: linear-gradient(to right, #fc9494, #ff3131);
+            width: 100%;
+            border: none;
+            padding: 15px;
+            color: white;
+            font-size: 15px;
+            cursor: pointer;
+            border-radius: 10px;
+        }
+        #submit:hover{
+            background-image: linear-gradient(to right, #fc9494, #ff3131);
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <form action="">
+            <fieldset>
+                <legend><b>NR-01 - Disposições Gerais
+                 </b></legend>
+                <br>
+                <div class="inputBox">
+                    <input type="text" name="nome" id="nome" class="inputUser" required>
+                    <label for="nome" class="labelInput">Nome completo</label>
+                </div>
+                <br><br>
+                <div class="inputBox">
+                    <input type="text" name="email" id="email" class="inputUser" required>
+                    <label for="email" class="labelInput">Setor</label>
+                </div>
+                <br><br>
+               
+                
+                
+                
+
+
+
+            
+
+            <fieldset class="grupo">
+                <div id="check">
+                    <label><strong>01 - A empresa cumpre e faz cumprir as Normas Regulamentadoras -
+                        NR, relativas à segurança e medicina do trabalho, a ela cabível? </strong></label><br><br>
+                    <input type="radio" id="male" type="radio" name="gender">
+                    <label for="resposta1"> SIM</label>
+                    <input type="radio" id="male" type="radio" name="gender">
+                    <label for="resposta2">NÃO</label>
+                </div>
+            </fieldset>
+
+            <fieldset class="grupo">
+                <div id="check">
+                    <label><strong>02-  A empresa cumpre e faz cumprir outras disposições, regulamentos
+                        sanitários do Estado ou Município, e outras, oriundas de
+                        convenções e acordos coletivos de trabalho?</strong></label><br><br>
+                        <input id="male" type="radio" name="gender">
+                        <label for="resposta1"> SIM</label>
+                        <input id="male" type="radio" name="gender">
+                        <label for="resposta2">NÃO</label>
+                </div>
+            </fieldset>
+
+            <fieldset class="grupo">
+                <div id="check">
+                    <label><strong>03 -  A empresa elabora ordens de serviço sobre segurança e medicina
+                        do trabalho aos trabalhadores?</strong></label><br><br>
+                        <input id="male" type="radio" name="gender">
+                        <label for="resposta1"> SIM</label>
+                        <input id="male" type="radio" name="gender">
+                        <label for="resposta2">NÃO</label>
+                </div>
+            </fieldset>
+
+            <fieldset class="grupo">
+                <div id="check">
+                    <label><strong>04 - A empresa repassa as instruções da ordem de serviço e os direitos
+                        e deveres, que os empregados devem conhecer e cumpri-los,
+                        visando à promoção da segurança e saúde dos trabalhadores?</strong></label><br><br>
+                        <input id="male" type="radio" name="gender">
+                        <label for="resposta1"> SIM</label>
+                        <input id="male" type="radio" name="gender">
+                        <label for="resposta2">NÃO</label>
+                </div>
+            </fieldset>
+
+            <fieldset class="grupo">
+                <div id="check">
+                    <label><strong>05 -  A empresa informa os empregados de que serão passíveis de
+                        punição, pelo descumprimento das ordens de serviço expedidas? </strong></label><br><br>
+                        <input id="male" type="radio" name="gender">
+                        <label for="resposta1"> SIM</label>
+                        <input id="male" type="radio" name="gender">
+                        <label for="resposta2">NÃO</label>
+                </div>
+            </fieldset>
+
+            <fieldset class="grupo">
+                <div id="check">
+                    <label><strong>06 - OA empresa estabelece medidas para eliminar ou neutralizar a
+                        insalubridade?</strong></label><br><br>
+                    <input id="male" type="radio" name="gender">
+                    <label for="resposta1"> SIM</label>
+                    <input id="male" type="radio" name="gender">
+                    <label for="resposta2">NÃO</label>
+                </div>
+            </fieldset>
+
+            <fieldset class="grupo">
+                <div id="check">
+                    <label><strong>07 - A empresa informa aos empregados os riscos profissionais que
+                        possam originar-se nos locais de trabalho?</strong></label><br><br>
+                        <input id="male" type="radio" name="gender">
+                        <label for="resposta1"> SIM</label>
+                        <input id="male" type="radio" name="gender">
+                        <label for="resposta2">NÃO</label>
+                </div>
+            </fieldset>
+
+            <fieldset class="grupo">
+                <div id="check">
+                    <label><strong>08 - A empresa informa os meios para prevenir e limitar tais riscos e as
+                        medidas adotadas pela empresa? </strong></label><br><br>
+                    <input id="male" type="radio" name="gender">
+                    <label for="resposta1"> SIM</label>
+                    <input id="male" type="radio" name="gender">
+                    <label for="resposta2">NÃO</label>
+                </div>
+            </fieldset>
+
+            <fieldset class="grupo">
+                <div id="check">
+                    <label><strong>09 - A empresa fornece e informa aos empregados a forma correta no
+                        uso dos EPI’s e EPC’s?
+                         </strong></label><br><br>
+                    <input id="male" type="radio" name="gender">
+                    <label for="resposta1"> SIM</label>
+                    <input id="male" type="radio" name="gender">
+                    <label for="resposta2">NÃO</label>
+                </div>
+            </fieldset>
+
+            <fieldset class="grupo">
+                <div id="check">
+                    <label><strong>10 - A empresa informa aos empregados os resultados dos exames
+                        médicos e de exames complementares de diagnóstico, aos quais
+                        os próprios trabalhadores foram submetidos? </strong></label><br><br>
+                    <input id="male" type="radio" name="gender">
+                    <label for="resposta1"> SIM</label>
+                    <input id="male" type="radio" name="gender">
+                    <label for="resposta2">NÃO</label>
+                </div>
+            </fieldset>
+
+            <fieldset class="grupo">
+                <div id="check">
+                    <label><strong>11 - A empresa informa os meios para prevenir e limitar tais riscos e as
+                        medidas adotadas pela empresa? </strong></label><br><br>
+                    <input id="male" type="radio" name="gender">
+                    <label for="resposta1"> SIM</label>
+                    <input id="male" type="radio" name="gender">
+                    <label for="resposta2">NÃO</label>
+                </div>
+            </fieldset>
+
+            <fieldset class="grupo">
+                <div id="check">
+                    <label><strong>12 - A empresa permitir que representantes dos trabalhadores
+                        acompanhem a fiscalização dos preceitos legais e regulamentares
+                        sobre segurança e medicina do trabalho? </strong></label><br><br>
+                    <input id="male" type="radio" name="gender">
+                    <label for="resposta1"> SIM</label>
+                    <input id="male" type="radio" name="gender">
+                    <label for="resposta2">NÃO</label>
+                </div>
+            </fieldset>
+
+            <fieldset class="grupo">
+                <div id="check">
+                    <label><strong>13 - A empresa informa aos empregados os resultados das avaliações
+                        ambientais realizadas nos locais de trabalho?  </strong></label><br><br>
+                    <input id="male" type="radio" name="gender">
+                    <label for="resposta1"> SIM</label>
+                    <input id="male" type="radio" name="gender">
+                    <label for="resposta2">NÃO</label>
+                </div>
+            </fieldset>
+
+            <fieldset class="grupo">
+                <div id="check">
+                    <label><strong>14 - A empresa informa aos empregados os procedimentos que devem
+                        ser adotados em caso de acidente ou doença relacionada ao
+                        trabalho?  </strong></label><br><br>
+                    <input id="male" type="radio" name="gender">
+                    <label for="resposta1"> SIM</label>
+                    <input id="male" type="radio" name="gender">
+                    <label for="resposta2">NÃO</label>
+                </div>
+            </fieldset>
+            
+
+
+           
+            <br><br>
+            <input type="submit" name="submit" id="submit">
+        </fieldset>
+
+
+
+
+
+
+        </form>
+    </div>
+</body>
+</html>
