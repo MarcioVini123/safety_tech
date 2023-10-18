@@ -31,6 +31,10 @@ app.get("/login",(req,res)=>{
     res.render('login')
 })
 
+app.get('/home',(req,res)=>{
+    res.render("home")
+})
+
 
 //Conectando ao banco de dados
 ;(async()=>{
@@ -68,7 +72,7 @@ app.post('/login', async(req, res)=>{
     if(!senhaValida){
     return res.status(400).json({mensagem: "Dados incorretos"})
     }
-    res.json({mensagem: 'Login bem sucedido'})
+    res.redirect('/home')
 })
 
 app.listen(3000,function(){
