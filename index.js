@@ -4,6 +4,7 @@ const path = require("path")
 const bodyParser = require("body-parser");
 const Usuarios = require("./database/usuarios");
 const bcrypt = require('bcrypt');
+const check = require("./database/checklist")
 
 app.use(bodyParser.urlencoded({extended:false}))
 
@@ -70,10 +71,73 @@ app.get('/check38', (req,res)=>{
 })
 
 
+
+
+app.get('/nr1', (req,res)=>{
+    res.render('nr1')
+})
+app.get('/check38', (req,res)=>{
+    res.render('check38')
+})
+app.get('/check38', (req,res)=>{
+    res.render('check38')
+})
+app.get('/check38', (req,res)=>{
+    res.render('check38')
+})
+app.get('/check38', (req,res)=>{
+    res.render('check38')
+})
+app.get('/check38', (req,res)=>{
+    res.render('check38')
+})
+app.get('/check38', (req,res)=>{
+    res.render('check38')
+})
+app.get('/check38', (req,res)=>{
+    res.render('check38')
+})
+app.get('/check38', (req,res)=>{
+    res.render('check38')
+})
+app.get('/check38', (req,res)=>{
+    res.render('check38')
+})
+app.get('/check38', (req,res)=>{
+    res.render('check38')
+})
+app.get('/check38', (req,res)=>{
+    res.render('check38')
+})
+app.get('/check38', (req,res)=>{
+    res.render('check38')
+})
+app.get('/check38', (req,res)=>{
+    res.render('check38')
+})
+app.get('/check38', (req,res)=>{
+    res.render('check38')
+})
+app.get('/check38', (req,res)=>{
+    res.render('check38')
+})
+app.get('/check38', (req,res)=>{
+    res.render('check38')
+})
+app.get('/check38', (req,res)=>{
+    res.render('check38')
+})
+app.get('/check38', (req,res)=>{
+    res.render('check38')
+})
+
+
+
 //Conectando ao banco de dados
 ;(async()=>{
     const database = require("./database/database");
     const Usuario = require('./database/usuarios');
+    const checks = require("./database/checklist")
     try{
         console.log('conectado a tudo do banco')
     }
@@ -92,6 +156,28 @@ app.post('/cadastrar',(req,res)=>{
     }).then(()=>{
         console.log('Usuario Registrado');
         res.redirect("/login");
+    })
+})
+
+//Rota para cadastrar checklist
+app.post('/checklist',(req,res)=>{
+    const {nome_completo,setor,pergunta1,pergunta2,pergunta3,pergunta4,pergunta5,pergunta6,pergunta7,pergunta8,pergunta9,pergunta10} = req.body;
+    check.create({
+        nome_completo: nome_completo,
+        setor: setor,
+        pergunta1:pergunta1,
+        pergunta2: pergunta2,
+        pergunta3: pergunta3,
+        pergunta4: pergunta4,
+        pergunta5:pergunta5,
+        pergunta6:pergunta6,
+        pergunta7:pergunta7,
+        pergunta8:pergunta8,
+        pergunta9:pergunta9,
+        pergunta10:pergunta10
+    }).then(()=>{
+        console.log('CheckList Registrado');
+        res.redirect("/check18");
     })
 })
 
