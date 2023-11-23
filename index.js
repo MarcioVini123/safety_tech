@@ -36,39 +36,13 @@ app.get('/home',(req,res)=>{
     res.render("home")
 })
 
+app.get('/escolhatreinamento', (req,res)=>{
+    res.render('escolhatreinamento')
+})
 app.get('/check18', (req,res)=>{
     res.render('check18')
 })
 
-app.get('/check22', (req,res)=>{
-    res.render('check22')
-})
-app.get('/check29', (req,res)=>{
-    res.render('check29')
-})
-app.get('/check30', (req,res)=>{
-    res.render('check30')
-})
-app.get('/check31', (req,res)=>{
-    res.render('check31')
-})
-app.get('/check32', (req,res)=>{
-    res.render('check32')
-})
-app.get('/check34', (req,res)=>{
-    res.render('check34')
-})
-app.get('/check36', (req,res)=>{
-    res.render('check36')
-})
-
-app.get('/check37', (req,res)=>{
-    res.render('check37')
-})
-
-app.get('/check38', (req,res)=>{
-    res.render('check38')
-})
 
 
 
