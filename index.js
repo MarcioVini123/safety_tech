@@ -24,8 +24,8 @@ app.get ("/servicos", (req, res)=>{
     res.render("servicos")
 })
 
-app.get ("/NR03", (req, res)=>{
-    res.render("NR-O3")
+app.get ("/nr1", (req, res)=>{
+    res.render("nr1")
 }) //Ajeitar depois
 
 app.get("/login",(req,res)=>{
@@ -42,7 +42,17 @@ app.get('/escolhatreinamento', (req,res)=>{
 app.get('/check18', (req,res)=>{
     res.render('check18')
 })
+app.get('/treinamento10', (req,res)=>{
+    res.render('treinamento10')
+})
 
+app.get('/relatorio', (req,res)=>{
+    res.render('relatorio')
+})
+
+app.get('/index', (req,res)=>{
+    res.render('index')
+})
 
 
 
